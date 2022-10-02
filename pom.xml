@@ -5,7 +5,17 @@
     <modules>
         <module>twitter-to-kafka-service</module>
         <module>app-config-data</module>
+        <module>kafka</module>
+        <module>kafka-model</module>
+        <module>kafka-admin</module>
+        <module>kafka-producer</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -35,6 +45,21 @@
             <dependency>
                 <groupId>com.dit.microservices.event.driven</groupId>
                 <artifactId>app-config-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>kafka-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>kafka-admin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>kafka-producer</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <!-- LOCAL End -->
