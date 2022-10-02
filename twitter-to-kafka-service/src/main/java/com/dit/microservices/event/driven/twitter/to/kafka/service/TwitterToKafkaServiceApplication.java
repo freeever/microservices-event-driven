@@ -1,6 +1,6 @@
 package com.dit.microservices.event.driven.twitter.to.kafka.service;
 
-import com.dit.microservices.event.driven.twitter.to.kafka.service.config.TwitterToKafkaServiceConfigData;
+import com.dit.microservices.event.driven.config.TwitterToKafkaServiceConfigData;
 import com.dit.microservices.event.driven.twitter.to.kafka.service.runner.StreamRunner;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.CommandLineRunner;
